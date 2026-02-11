@@ -3,7 +3,7 @@
 int main() {
     int num = 0;
 
-    printf("Enter the attendance of the class: ");
+    printf("Enter Num: ");
     scanf("%d", &num); 
 
     if (num > 0 ) {  

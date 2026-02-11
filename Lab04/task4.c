@@ -1,21 +1,19 @@
 #include <stdio.h>
-int main (){
+#include <string.h>
 
-     char username[10] = "admin";
-     char pass[10] = "1234";
+int main() {
+    char username[10];
+    char pass[10];
 
-     printf("Enter Username: ");
-     scanf("%c", &username);
-     
-     printf("Enter Password: ");
-     scanf("%c", &pass);
-     
-     if (username == "admin" && pass == "1234" ){
-          printf("Login Successful! ");
-     }
-     else {
-          printf("Invalid Credentials!");
-     }
-     return 0;
+    printf("Enter Username: ");
+    scanf("%9s", username);  
+    printf("Enter Password: ");
+    scanf("%9s", pass);      
+    if (strcmp(username, "admin") == 0 && strcmp(pass, "1234") == 0) {
+        printf("Login Successful!\n");
+    } else {
+        printf("Invalid Credentials!\n");
+    }
+
+    return 0;
 }
- 

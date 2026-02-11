@@ -9,9 +9,9 @@ int main() {
         printf("Your final bill amount after discount is: %d", amount);
     }
     else if (amount >= 3000 && amount < 5000) {
-        printf("You are eligible for a discount of 10%%");
+        printf("You are eligible for a discount of 10%% \n");
         amount = amount - (amount * 10 / 100);
-        printf("Your final bill amount after discount is: %d", amount);
+        printf("Your final bill amount after discount is: %d \n", amount);
     }
     else {
         printf("You are not eligible for any discount");
