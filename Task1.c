@@ -2,7 +2,7 @@
 int main (){
      int attendence = 0;
      printf("Enter the attendence of the class: ");
-     scanf(attendence);
+     scanf("%d", &attendence);
      if (attendence >= 75){
           printf("Eligible For Exam");
      }
